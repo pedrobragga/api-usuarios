@@ -1,27 +1,45 @@
 # 🚀 API de Gerenciamento de Usuários
 
-API REST desenvolvida com Java e Spring Boot para gerenciamento de usuários.
+API REST desenvolvida com Java e Spring Boot para gerenciamento de usuários, permitindo operações de CRUD com integração ao banco de dados PostgreSQL.
+
+---
 
 ## 🛠️ Tecnologias
-- Java
+
+- Java 21
 - Spring Boot
+- Spring Data JPA
 - PostgreSQL
-- JPA
 - Maven
 
+---
+
+## 📂 Estrutura do Projeto
+
+src/main/java/com/seuprojeto/api_usuarios
+- controller → recebe requisições HTTP
+- service → regras de negócio
+- repository → acesso ao banco de dados
+- model → entidades do sistema
+- dto → transferência de dados
+
+---
+
 ## ⚙️ Funcionalidades
+
 - Criar usuário
 - Listar usuários
-- Integração com banco de dados
+- Integração com banco PostgreSQL
+- Arquitetura em camadas (Controller, Service, Repository)
 
-## ▶️ Como rodar
+---
 
-1. Clone o projeto:
+## ▶️ Como rodar o projeto
+
+1. Clone o repositório:
+
+```bash
 git clone https://github.com/pedrobragga/api-usuarios.git
-
-2. Configure o PostgreSQL
-
-3. Rode a aplicação
 
 ## 📌 Endpoints
 
