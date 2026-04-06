@@ -1,0 +1,30 @@
+package com.seuprojeto.api_usuarios.controller;
+
+import com.seuprojeto.api_usuarios.model.UserModel;
+import com.seuprojeto.api_usuarios.service.UserService;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/users")
+public class UserController {
+
+    private final UserService service;
+
+    public UserController(UserService service) {
+        this.service = service;
+    }
+
+    // 🔥 CRIAR USUÁRIO
+    @PostMapping
+    public UserModel criar(@RequestBody UserModel user) {
+        return service.salvar(user);
+    }
+
+    // 🔥 LISTAR USUÁRIOS
+    @GetMapping
+    public List<UserModel> listar() {
+        return service.listar();
+    }
+}
