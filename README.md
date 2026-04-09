@@ -1,11 +1,9 @@
 # 🚀 API de Gerenciamento de Usuários
-
-API REST desenvolvida com Java e Spring Boot para gerenciamento de usuários, permitindo operações de CRUD com integração ao banco de dados PostgreSQL.
+API REST desenvolvida com **Java + Spring Boot** para gerenciamento de usuários, permitindo operações básicas com integração ao banco de dados PostgreSQL.
 
 ---
 
 ## 🛠️ Tecnologias
-
 - Java 21
 - Spring Boot
 - Spring Data JPA
@@ -15,40 +13,41 @@ API REST desenvolvida com Java e Spring Boot para gerenciamento de usuários, pe
 ---
 
 ## 📂 Estrutura do Projeto
-
 src/main/java/com/seuprojeto/api_usuarios
-- controller → recebe requisições HTTP
-- service → regras de negócio
-- repository → acesso ao banco de dados
-- model → entidades do sistema
-- dto → transferência de dados
+- controller → Recebe requisições HTTP
+- service → Contém as regras de negócio
+- repository → Responsável pelo acesso ao banco de dados
+- model → Entidades do sistema
+- dto → Objetos de transferência de dados
 
 ---
 
 ## ⚙️ Funcionalidades
-
-- Criar usuário
-- Listar usuários
+- ✅ Criar usuário
+- ✅ Listar usuários
 - Integração com banco PostgreSQL
 - Arquitetura em camadas (Controller, Service, Repository)
 
 ---
 
 ## ▶️ Como rodar o projeto
-
-1. Clone o repositório:
-
-```bash
+# Clone o repositório
 git clone https://github.com/pedrobragga/api-usuarios.git
+# Acesse a pasta do projeto
+cd api-usuarios
+# Execute a aplicação
+./mvnw spring-boot:run
+
+---
 
 ## 📌 Endpoints
+### 🔍 GET /users
+Lista todos os usuários
 
-### GET /users
-Lista usuários
+### ➕ POST /users
+Cria um novo usuário
 
-### POST /users
-Cria usuário
-
+Exemplo de requisição:
 {
   "nome": "Pedro",
   "email": "pedro@email.com"
@@ -56,4 +55,13 @@ Cria usuário
 
 ---
 
+## 🧠 Próximas melhorias
+- Implementar atualização de usuários (PUT)
+- Implementar remoção de usuários (DELETE)
+- Adicionar validações nos dados
+- Documentação da API com Swagger
+
+---
+
+## 👨‍💻 Autor
 Desenvolvido por Pedro Braga Bardini
