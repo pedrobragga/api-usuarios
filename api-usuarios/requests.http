@@ -11,3 +11,17 @@ Content-Type: application/json
   "nome": "Pedro",
   "email": "pedro@email.com"
 }
+
+###
+
+### ATUALIZAR USUÁRIO
+PUT http://localhost:8080/users/1
+Content-Type: application/json
+
+{
+  "name": "Pedro Atualizado",
+  "email": "novo@email.com"
+}
+
+### DELETAR USUÁRIO
+DELETE http://localhost:8080/users/1
